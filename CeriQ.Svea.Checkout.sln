@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriQ.Svea.Checkout", "CeriQ.Svea.Checkout\CeriQ.Svea.Checkout.csproj", "{5B2FD941-7F9E-467F-96C1-DB924C04EC76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriQ.Svea.Checkout", "src\CeriQ.Svea.Checkout\CeriQ.Svea.Checkout.csproj", "{5B2FD941-7F9E-467F-96C1-DB924C04EC76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriQ.Svea.Checkout.Tests", "CeriQ.Svea.Checkout.Tests\CeriQ.Svea.Checkout.Tests.csproj", "{D13FAD3D-EC84-4BDF-BB7E-A0EEA675C7B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeriQ.Svea.Checkout.Tests", "src\CeriQ.Svea.Checkout.Tests\CeriQ.Svea.Checkout.Tests.csproj", "{D13FAD3D-EC84-4BDF-BB7E-A0EEA675C7B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
