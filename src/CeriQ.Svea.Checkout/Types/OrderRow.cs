@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace CeriQ.Svea.Checkout.Types
 {
@@ -28,6 +29,14 @@ namespace CeriQ.Svea.Checkout.Types
             int? rowNumber
             )
         {
+            if (name == null)
+                throw new ArgumentNullException(nameof(name));
+            if (name.Length < 1 || name.Length > 40)
+                throw new ArgumentOutOfRangeException(nameof(name), "Length of the name must be between 1 and 40 characters.");
+
+            if(unit != null && (unit.Length < 1 || unit.Length > 4))
+                throw new ArgumentOutOfRangeException(nameof(unit), "Length of the unit must be between 1 and 4 characters.");
+
             ArticleNumber = articleNumber;
             Name = name;
             Quantity = quantity;

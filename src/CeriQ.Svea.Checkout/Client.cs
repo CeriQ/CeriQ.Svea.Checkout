@@ -44,7 +44,7 @@ namespace CeriQ.Svea.Checkout
             httpMessage.Headers.Add("Authorization", GenerateSecurityHeader(timestampString, content));
             if (!String.IsNullOrEmpty(content))
             {
-                httpMessage.Content = new StringContent(content, Encoding.Default, "application/json");
+                httpMessage.Content = new StringContent(content, Encoding.UTF8, "application/json");
             }
             httpMessage.Method = method;
             httpMessage.RequestUri = new Uri(uri);
