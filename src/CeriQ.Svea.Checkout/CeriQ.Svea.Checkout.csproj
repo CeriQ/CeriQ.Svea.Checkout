@@ -46,7 +46,8 @@
     <Compile Include="Callback.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Constant.cs" />
-    <Compile Include="Extensions\DateTime.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Http\HttpClient.cs" />
     <Compile Include="Http\IHttpClient.cs" />
     <Compile Include="Mode.cs" />

@@ -20,28 +20,12 @@ namespace CeriQ.Svea.Checkout
             _sharedSecret = sharedSecret;
         }
 
-        internal static string GenerateSecurityHeader(string merchantId, string sharedSecret, string timestampString, string body)
-        {
-            byte[] hash;
-            string hashString = body + sharedSecret + timestampString;
-            using (var sha = new System.Security.Cryptography.SHA512Managed())
-            {
-                hash = sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(hashString));
-            }
-            StringBuilder hashHexSb = new StringBuilder();
-            foreach (var b in hash)
-            {
-                hashHexSb.Append(String.Format("{0:x2}", b));
-            }
-            return $"Svea {Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes($"{merchantId}:{hashHexSb.ToString()}"))}";
-        }
-
         private HttpRequestMessage CreateHttpRequestMessage(string uri, HttpMethod method, string content, DateTime timestamp)
         {
             var timestampString = timestamp.ToSveaString();
             var httpMessage = new HttpRequestMessage();
             httpMessage.Headers.Add("Timestamp", timestampString);
-            httpMessage.Headers.Add("Authorization", GenerateSecurityHeader(_merchantId, _sharedSecret, timestampString, content));
+            httpMessage.Headers.Add("Authorization", content.ToSveaAuthorizationHeader(_merchantId, _sharedSecret, timestamp));
             if (!String.IsNullOrEmpty(content))
             {
                 httpMessage.Content = new StringContent(content, Encoding.UTF8, "application/json");
