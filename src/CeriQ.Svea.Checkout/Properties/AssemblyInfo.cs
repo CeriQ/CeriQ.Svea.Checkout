@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CeriQ.Svea.Checkout")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A library to simplify connecting to Sveas Checkout API.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("CeriQ AB")]
 [assembly: AssemblyProduct("CeriQ.Svea.Checkout")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
