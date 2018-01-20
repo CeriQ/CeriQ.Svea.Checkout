@@ -1,6 +1,6 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
-    public class Gui
+    public sealed class Gui
     {
         public string Layout { get; }
         public string Snippet { get; }

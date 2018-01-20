@@ -3,7 +3,7 @@ using System;
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class OrderRow
+    public sealed class OrderRow
     {
         public string ArticleNumber { get; }
         public string Name { get; }

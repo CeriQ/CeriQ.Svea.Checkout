@@ -2,7 +2,7 @@
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class Customer
+    public sealed class Customer
     {
         public string NationalId { get; }
         public bool IsCompany { get; }

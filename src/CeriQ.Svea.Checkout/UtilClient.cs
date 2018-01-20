@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace CeriQ.Svea.Checkout
 {
-    public class UtilClient : Client
+    public sealed class UtilClient : Client
     {
         public UtilClient(Mode mode, string merchantId, string sharedSecret)
             : this(mode == Mode.Production ?

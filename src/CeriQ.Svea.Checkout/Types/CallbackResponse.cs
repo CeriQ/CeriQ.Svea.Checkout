@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class CallbackResponse
+    public sealed class CallbackResponse
     {
         public IReadOnlyDictionary<string, string> Headers { get; }
         public string Body { get; }

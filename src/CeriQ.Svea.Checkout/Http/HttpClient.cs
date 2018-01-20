@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace CeriQ.Svea.Checkout.Http
 {
-    class HttpClient : IHttpClient
+    internal class HttpClient : IHttpClient
     {
         private readonly System.Net.Http.HttpClient _client;
         public HttpClient()

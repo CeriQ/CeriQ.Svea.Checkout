@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class MerchantSettings
+    public sealed class MerchantSettings
     {
         public string TermsUri { get; }
         public string CheckoutUri { get; }

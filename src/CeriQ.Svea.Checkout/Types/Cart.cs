@@ -2,7 +2,7 @@
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class Cart
+    public sealed class Cart
     {
         public List<OrderRow> Items { get; }
 

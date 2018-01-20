@@ -1,6 +1,6 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
-    public class PresetValue
+    public sealed class PresetValue
     {
         public string TypeName { get; }
         public string Value { get; }

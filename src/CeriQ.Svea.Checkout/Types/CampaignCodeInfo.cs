@@ -4,7 +4,7 @@ using System;
 
 namespace CeriQ.Svea.Checkout.Types
 {
-    public class CampaignCodeInfo
+    public sealed class CampaignCodeInfo
     {
         public int CampaignCode { get;  }
         public int ContractLengthInMonths { get;  }

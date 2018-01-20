@@ -2,7 +2,7 @@
 
 namespace CeriQ.Svea.Checkout
 {
-    public class OrderClient : Client
+    public sealed class OrderClient : Client
     {
         public OrderClient(Mode mode, string merchantId, string sharedSecret)
             : this(mode == Mode.Production ?

@@ -2,7 +2,7 @@
 
 namespace CeriQ.Svea.Checkout
 {
-    public class Callback
+    public sealed class Callback
     {
         private readonly string _merchantId;
         private readonly string _sharedSecret;

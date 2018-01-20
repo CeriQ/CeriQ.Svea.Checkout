@@ -1,6 +1,6 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
-    public class Address
+    public sealed class Address
     {
         public string FullName { get; }
         public string FirstName { get; }
