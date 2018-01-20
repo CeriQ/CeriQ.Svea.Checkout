@@ -31,8 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,16 +46,18 @@
     <Compile Include="Callback.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Constant.cs" />
+    <Compile Include="Extensions\DateTime.cs" />
     <Compile Include="Http\HttpClient.cs" />
     <Compile Include="Http\IHttpClient.cs" />
     <Compile Include="Mode.cs" />
     <Compile Include="OrderClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\Address.cs" />
+    <Compile Include="Types\CallbackResponse.cs" />
     <Compile Include="Types\CampaignCodeInfo.cs" />
     <Compile Include="Types\Cart.cs" />
     <Compile Include="Types\CheckoutOrderStatus.cs" />
-    <Compile Include="Types\CheckoutValidationCallbackResponse.cs" />
+    <Compile Include="Types\CheckoutValidationCallback.cs" />
     <Compile Include="Types\Customer.cs" />
     <Compile Include="Types\Data.cs" />
     <Compile Include="Types\Gui.cs" />

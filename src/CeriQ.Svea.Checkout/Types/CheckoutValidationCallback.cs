@@ -1,10 +1,10 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
-    public class CheckoutValidationCallbackResponse
+    public class CheckoutValidationCallback
     {
         public bool Valid { get; }
         public string ClientOrderNumber { get; }
-        public CheckoutValidationCallbackResponse(bool valid, string clientOrderNumber)
+        public CheckoutValidationCallback(bool valid, string clientOrderNumber)
         {
             Valid = valid;
             ClientOrderNumber = clientOrderNumber;
