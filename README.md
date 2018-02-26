@@ -7,3 +7,4 @@ The library takes care of constructing authorization headers and making sure tha
 - Construct automatic tests
 - Document call flow
 - Better Readme.md
+- Update to .NET Standard
