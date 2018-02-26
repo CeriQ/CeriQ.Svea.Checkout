@@ -1,5 +1,8 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
+    /// <summary>
+    /// Order status for the order.
+    /// </summary>
     public enum CheckoutOrderStatus
     {
         Cancelled,
@@ -7,6 +10,9 @@
         Confirmed,
         PaymentGuaranteed,
         WaitingToBeSent,
-        Final
+        /// <summary>
+        /// The order is completed and ready to be activated and sent.
+        /// </summary>
+        Final 
     }
 }
