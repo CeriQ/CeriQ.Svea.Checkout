@@ -1,5 +1,8 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
+    /// <summary>
+    /// Unknown
+    /// </summary>
     public sealed class PresetValue
     {
         public string TypeName { get; }
