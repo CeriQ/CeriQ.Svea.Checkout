@@ -12,52 +12,52 @@ namespace CeriQ.Svea.Checkout.Types
         /// <summary>
         /// The id of this campaign
         /// </summary>
-        public int CampaignCode { get;  }
+        public int CampaignCode { get; }
         /// <summary>
         /// The amount of months the customer can payback the campaign over.
         /// </summary>
-        public int ContractLengthInMonths { get;  }
+        public int ContractLengthInMonths { get; }
         /// <summary>
         /// Description of the campaign
         /// </summary>
-        public string Description { get;  }
+        public string Description { get; }
         /// <summary>
         /// Minimum purchase amount. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal FromAmount { get;  }
+        public Decimal FromAmount { get; }
         /// <summary>
         /// Maximum purchase amount. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal ToAmount { get;  }
+        public Decimal ToAmount { get; }
         /// <summary>
         /// Setup fee for the campaign. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal InitialFee { get;  }
+        public Decimal InitialFee { get; }
         /// <summary>
         /// Interest rate for the campaign. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal InterestRatePercent { get;  }
+        public Decimal InterestRatePercent { get; }
         /// <summary>
         /// Monthly annuity factor. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal MonthlyAnnuityFactor { get;  }
+        public Decimal MonthlyAnnuityFactor { get; }
         /// <summary>
         /// Notification fee. Uses minor currency. For example, 100 means 1, 50 means 0.5.
         /// </summary>
-        public Decimal NotificationFee { get;  }
+        public Decimal NotificationFee { get; }
         /// <summary>
         /// Number of months before a campaign purchase starts accruing interest.
         /// </summary>
-        public int NumberOfInterestFreeMonths { get;  }
+        public int NumberOfInterestFreeMonths { get; }
         /// <summary>
         /// Number of months before the campaign needs to be paid back upon
         /// </summary>
-        public int NumberOfPaymentFreeMonths { get;  }
+        public int NumberOfPaymentFreeMonths { get; }
         /// <summary>
         /// The type of campaign
         /// </summary>
         [JsonConverter(typeof(StringEnumConverter))]
-        public PaymentPlanType PaymentPlanType { get;  }
+        public PaymentPlanType PaymentPlanType { get; }
         public CampaignCodeInfo(
             int campaignCode,
             int contractLengthInMonths,
