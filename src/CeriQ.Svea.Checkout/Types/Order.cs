@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace CeriQ.Svea.Checkout.Types
 {
+    /// <summary>
+    /// Represents an order fullfillment request to Svea Ekonomi
+    /// </summary>
     public sealed class Order
     {
         public MerchantSettings MerchantSettings { get; }
@@ -14,6 +17,16 @@ namespace CeriQ.Svea.Checkout.Types
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public List<PresetValue> PresetValues { get; }
 
+        /// <summary>
+        /// Creates a new order request.
+        /// </summary>
+        /// <param name="merchantSettings">The settings and endpoints for this order to return on</param>
+        /// <param name="cart">A cart object containing the order rows</param>
+        /// <param name="locale">The locale for this order request.</param>
+        /// <param name="currency">The currency for this orer request.</param>
+        /// <param name="countryCode">The country code for this order request</param>
+        /// <param name="clientOrderNumber">A order number to represent the order in the sending system. Can be updated in a ValidateCallbackResponse.</param>
+        /// <param name="presetValues">Unknown. TODO</param>
         public Order(
             MerchantSettings merchantSettings,
             Cart cart,
