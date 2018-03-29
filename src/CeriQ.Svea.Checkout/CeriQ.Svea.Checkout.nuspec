@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CeriQ.Svea.Checkout</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>CeriQ Svea Checkout Client</title>
     <authors>Eric Johansson</authors>
     <owners>Eric Johansson</owners>
