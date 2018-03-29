@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CeriQ.Svea.Checkout</id>
+    <version>1.0.1</version>
+    <title>CeriQ Svea Checkout Client</title>
+    <authors>Eric Johansson</authors>
+    <owners>Eric Johansson</owners>
+    <licenseUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Client for Svea Ekonomi checkout solution. Simplifies REST calls with securitytokens to simple class function calls.</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Svea Checkout Payment CeriQ APIClient Client API</tags>
+  </metadata>
+</package>
