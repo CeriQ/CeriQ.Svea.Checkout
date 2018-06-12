@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0</Version>
+    <Authors>Eric Johansson</Authors>
+    <Company>CeriQ AB</Company>
+    <Description>Client for Svea Ekonomi checkout solution. Simplifies REST calls with securitytokens to simple class function calls.</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageProjectUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout</RepositoryUrl>
+    <PackageTags>Svea Checkout Payment CeriQ APIClient Client API</PackageTags>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>Upgraded project to netstandard.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
