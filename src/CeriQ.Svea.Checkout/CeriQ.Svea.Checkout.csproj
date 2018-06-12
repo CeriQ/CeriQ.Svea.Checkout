@@ -1,96 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-<PropertyGroup>
-   <TargetFramework>netcoreapp1.1</TargetFramework>
- </PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B2FD941-7F9E-467F-96C1-DB924C04EC76}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CeriQ.Svea.Checkout</RootNamespace>
-    <AssemblyName>CeriQ.Svea.Checkout</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <Version>2.0.0.0</Version>
-    <Authors>Eric Johansson</Authors>
-    <Company>CeriQ AB</Company>
-    <PackageLicenseUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/CeriQ/CeriQ.Svea.Checkout</PackageProjectUrl>
-    <Description>Client for Svea Ekonomi checkout solution. Simplifies REST calls with securitytokens to simple class function calls.</Description>
-    <Copyright>Copyright 2018</Copyright>
-    <PackageTags>Svea Checkout Payment CeriQ APIClient Client API</PackageTags>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Callback.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Constant.cs" />
-    <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="Http\HttpClient.cs" />
-    <Compile Include="Http\IHttpClient.cs" />
-    <Compile Include="Mode.cs" />
-    <Compile Include="OrderClient.cs" />
-    <Compile Include="Types\Address.cs" />
-    <Compile Include="Types\CallbackResponse.cs" />
-    <Compile Include="Types\CampaignCodeInfo.cs" />
-    <Compile Include="Types\Cart.cs" />
-    <Compile Include="Types\CheckoutOrderStatus.cs" />
-    <Compile Include="Types\CheckoutValidationCallback.cs" />
-    <Compile Include="Types\Customer.cs" />
-    <Compile Include="Types\Data.cs" />
-    <Compile Include="Types\Gui.cs" />
-    <Compile Include="Types\MerchantSettings.cs" />
-    <Compile Include="Types\Order.cs" />
-    <Compile Include="Types\OrderRow.cs" />
-    <Compile Include="Types\PaymentPlanType.cs" />
-    <Compile Include="Types\PaymentType.cs" />
-    <Compile Include="Types\PresetValue.cs" />
-    <Compile Include="UtilClient.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
