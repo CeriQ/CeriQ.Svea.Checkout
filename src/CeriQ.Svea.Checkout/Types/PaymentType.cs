@@ -13,6 +13,7 @@
         SVEACARDPAY_PF,
         ACCOUNTCREDIT,
         CARD,
+        ACCOUNT,
         // DirektBank types
         BANKAXESS,
         DBAKTIAFI,
