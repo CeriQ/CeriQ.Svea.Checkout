@@ -23,6 +23,7 @@
         DBSHBSE,
         DBSPANKKIFI,
         DBSWEDBANKSE,
-        DBTAPIOLAFI
+        DBTAPIOLAFI,
+        TRUSTLY
     }
 }
