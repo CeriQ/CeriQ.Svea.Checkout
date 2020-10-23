@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
-    <Version>2.0.1</Version>
+    <Version>2.1.0</Version>
     <Authors>Eric Johansson</Authors>
     <Company>CeriQ AB</Company>
     <Description>Client for Svea Ekonomi checkout solution. Simplifies REST calls with securitytokens to simple class function calls.</Description>
@@ -14,6 +14,8 @@
     <RepositoryType>Git</RepositoryType>
     <PackageReleaseNotes>Added net452 next to netstandard 2.0.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <FileVersion>2.1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
