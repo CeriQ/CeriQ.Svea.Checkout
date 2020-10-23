@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace CeriQ.Svea.Checkout
 {
+    /// <summary>
+    /// Internal base class for Svea Clients.
+    /// </summary>
     public abstract class Client
     {
         private readonly Http.IHttpClient _client;

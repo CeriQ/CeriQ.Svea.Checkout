@@ -37,7 +37,7 @@ namespace CeriQ.Svea.Checkout.Tests
                 null);
             var orderClient = new OrderClient(Mode.Test, "MerchantId", "SharedSecret");
 
-            var resp = orderClient.Create(order).Result;
+            //var resp = orderClient.Create(order).Result;
         }
 
         private void AsyncTestWrapper(Action func)

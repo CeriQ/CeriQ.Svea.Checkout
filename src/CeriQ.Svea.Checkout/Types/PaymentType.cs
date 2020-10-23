@@ -1,5 +1,8 @@
 ﻿namespace CeriQ.Svea.Checkout.Types
 {
+    /// <summary>
+    /// Selected payment method for this order.
+    /// </summary>
     public enum PaymentType
     {
         Null,
@@ -9,6 +12,8 @@
         SVEACARDPAY,
         SVEACARDPAY_PF,
         ACCOUNTCREDIT,
+        CARD,
+        ACCOUNT,
         // DirektBank types
         BANKAXESS,
         DBAKTIAFI,
