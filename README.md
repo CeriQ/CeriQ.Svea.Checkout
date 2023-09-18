@@ -1,3 +1,6 @@
+# THIS PACKAGE IS NO LONGER BEING MAINTAINED
+I recommend looking at https://github.com/sveawebpay/svea-sdk-dotnet instead, or download the same as the nuget package __Svea.WebPay.SDK__
+
 # CeriQ.Svea.Checkout
 Simplifies communicating with Svea Ekonomis Checkout API.
 
